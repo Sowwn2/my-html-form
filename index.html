@@ -1,21 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="html,css,form">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sown html form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="heading">
+      <header>
+        <h1 id="title">HTML form project</h1>
+        <p id="description">Thank you for taking time </p>
+      </header>
+    </div>
+<div class="form">
+  <main>
+    <form method="post" id="survey-form">
+    <div class="name">
+<label id="name-label" for="name">Name</label><br>
+<input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite + React + TS</title>
-</head>
+<label id="email-label" for="email">Email</label><br>
+<input type="email" id="email" name="email" placeholder="Enter your Email" required>
+    
+<label id="number-label" for="number">Age</label><br>
+<input type="number" id="number" name="number" placeholder="Age" min="1" max="100">
 
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
-</body>
+  <div class="gender">
+  <label for="gender">Select your gender (optional)</label><br>
+  <input type="radio" id="gender" name="gender" value="male">Male</input><br>
+  <input type="radio" id="gender" name="gender" value="female">Female</input>
+  </div>
 
+<div>
+<label for="level">Indicate your level of experience</label>
+<select id="dropdown"name="level" required>
+  <option value="" disabled selected>Select an option</option>
+  <option value="basic">Basic</option>
+  <option value="advance">Advance</option>
+  <option value="master">Master</option>
+</select>
+</div>
+
+<div class="field">
+  <label for="field"> What's your specialization?</label><br>
+  <input type="checkbox" id="field1" name="feild1" value="Front-end dev">Front-end Developer</input><br>
+  <input type="checkbox" id="field2" name="feild2" value="Front-end dev">Back-end Developer</input><br>
+  <input type="checkbox" id="field3" name="feild3" value="Front-end dev">Full-stack Developer</input><br>
+  <input type="checkbox" id="field4" name="feild4" value="Front-end dev">Mobile Developer</input><br>
+  <input type="checkbox" id="field5" name="feild5" value="Front-end dev">Game Developer</input><br>
+  <input type="checkbox" id="field6" name="feild6" value="other">Other</input><br>
+  </div>
+  <div class="comment">
+    <label class="comment-label" for="comment">Any comments</label><br>
+    <textarea id="comment" name="comment" rows="8" cols="50" placeholder="Enter comment here..."> </textarea>
+  </div>
+  <div>
+    <input type="submit" id="submit" name="submit"value="Submit">
+  </div>
+  
+    </div>
+    </form>
+  </main>
+</div>
+  </body>
 </html>
